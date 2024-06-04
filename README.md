@@ -26,23 +26,24 @@ sudo hostnamectl set-hostname docker1.enta.pt
 ```
 sudo reboot
 ```
-4. Cria o certificado, neste passo é importante dar um nome referido á localização da máquina;
+###Tópico 1:
+4. 
 ```
-./easyrsa build-ca
+
 ```
-5. Gera um pedido, aqui insere o nome que deste ao server;
+5. 
 ```
-./easyrsa gen-req enta nopass
+
 ```
-6. Assina o certificado;
+6. 
 ```
-./easyrsa sign-req server enta
+
 ```
-7. Passa o certificado para a máquina que necessita do certificado;
+7. 
 ```
-scp -i chave.pem /usr/share/easy-rsa/pki/issued/enta.crt ubuntu@10.0.9.101:/tmp
+
 ```
-8. Passa a key para a máquina que necessita da key;
+8. 
 ```
-scp -i chave.pem /usr/share/easy-rsa/pki/private/enta.key ubuntu@10.0.9.101:/tmp
+
 ```
