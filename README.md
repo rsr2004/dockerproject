@@ -41,7 +41,7 @@ nano Dockerfile
 nano nginx.conf
 cd html
 nano index.html
-cd ~/nginx-ssl
+cd ~/nginx-ssl/ssl
 ```
 6. Iremos agora criar os certificados para o HTTPS (selfsigned):
 ```
