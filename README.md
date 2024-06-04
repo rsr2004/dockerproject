@@ -53,9 +53,9 @@ docker build -t rsr2004/nginxssl .
 ```
 7. Depois de termos a imagem criada iremos executar o container do Docker:
 ```
-docker run -p 5001:5000 rsr2004/nginxssl
+docker run -d -p 5001:443 rsr2004/nginxssl
 ```
-8. 
+8. Num browser pesquisar o seguinte URL e verificar se está a funcionar:
 ```
-
+https://100.28.10.242:5000/
 ```
